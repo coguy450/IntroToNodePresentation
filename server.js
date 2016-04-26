@@ -28,7 +28,8 @@ app.get('/', function(req,res) {
 //pp.get('/',controller.index);
 //app.get('/pres', controller.presentation);
 
-var server = app.listen('3000', function() {
+
+var server = app.listen((process.env.PORT || 5000), function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log('listening at port:'+ port);
