@@ -1,0 +1,383 @@
+<!doctype html>
+<!--
+
+    So you'd like to know how to use impress.js?
+
+    You've made the first, very important step - you're reading the source code.
+    And that's how impress.js presentations are built - with HTML and CSS code.
+
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
+
+    You need to design and build it by hand.
+
+    So...
+
+    Would you still like to know how to use impress.js?
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Learn Node.js</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <!--
+
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+
+    <div id="title" class="step" data-x="-5400" data-y="-2400" data-scale="8">
+        <span class="try">Beginner's guide to </span>
+        <h1>Node.js<sup></sup></h1>
+        <span class="footnote"><sup>by:</sup> Eric Hartmann</span>
+    </div>
+
+    <div id="its" class="step" data-x="-4870" data-y="-3150" data-rotate="0" data-scale="0.3" data-rotate-y="180">
+        <p>Here's what we'll cover: <br/>
+          <ul>
+            <li>What is Node.js?</li>
+            <li>Getting Started</li>
+            <li>Package Manager</li>
+            <li>Example Server</li>
+            <li>Resources</li>
+            <li>Questions</li>
+         </ul>
+      </p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-scale="4">
+        <h1>What is Node.js?</h1>
+        <h4>a JavaScript runtime built on Chrome's V8 JavaScript engine.</h4>
+        <p>it' an event-driven, non-blocking I/O model
+            that makes it lightweight and efficient. </p>
+    </div>
+    <div id="ron" class="step" data-x="-1000" data-y="1800" data-scale="1" data-z="-3000">
+       <img src="http://31.media.tumblr.com/636ff7c77c42a906b062dc344c6a5a36/tumblr_inline_n7ygqh6Y0C1svcdm1.gif" /><br />
+        <span>Got that?</span>
+    </div>
+    <div id="ronBack" class="step" data-x="-1000" data-y="1800" data-rotate-y="90" data-scale="1" data-z="-3100">
+        <p>Trust me, it's Awesome!</p>
+    </div>
+
+
+     <div id="jen" class="step" data-x="-1550" data-y="1765" data-z="-3200" data-rotate-y="180" data-scale="1">
+        <img src="http://33.media.tumblr.com/568890a50f2421bd0714d13a771a6839/tumblr_mnq6p6ah6r1r0byljo1_250.gif" />
+    </div>
+
+    <div id="ing" class="step" data-x="-1200" data-y="1600" data-rotate-x="90" data-z="-3100" data-scale="1">
+        <p>It's <b class="positioning">super fast,</b> <b class="rotating">easy-ish</b> to learn and<b class="scaling">non</b>blocking </p>
+    </div>
+
+    <div id="imagination" class="step" data-x="8700" data-y="-300" data-scale="2">
+      Let's Get started by installing <a href="http://www.nodejs.org">Node.js</a>
+    </div>
+
+    <div class="step" data-x="8500" data-y="1800" data-rotate-x="20" data-scale="2">
+        To see if Node is already installed, type: <i> node --version </i> <br />in your control panel
+    </div>
+    <div class="step" data-x="8500" data-y="2500" data-rotate-x="20" data-scale="2">
+        Navigate to the folder you want to create your project and stay there<br />
+      <i>mkdir newFolder
+        </i>
+
+    </div>
+    <div class="step" data-x="8500" data-y="3200" data-rotate-x="20" data-scale="2">
+        You can clone a project or type:  <br />
+        <i>npm init</i> (this will guide you through a wizard and create a package.json)
+    </div>
+    <div class="step" data-x="8500" data-y="3700" data-rotate-x="20" data-scale="2">
+        What does that get us? <br />
+        What does node do? <br />
+    </div>
+    <div class="step" data-x="8500" data-y="4200" data-rotate-x="20" data-scale="2">
+        Node can be run a single time or <br />
+        as a server
+    </div>
+    <div class="step" data-x="8500" data-y="4900" data-rotate-x="20" data-scale="2">
+        To run node a single time: <br />
+        1) Create a file called hello.js with <i>console.log('hello world')</i> <br />
+        2) Type <i>node hello.js</i><br />
+        3) You should see "hello world" in the console.
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>Whoopty do, is that all node does?</p>
+    </div>
+    <div class="step" data-x="6000" data-y="4500"  data-rotate="20" data-scale="2">
+        <p>No...it does more, read about it on <a href="http://www.nodejs.org">www.nodejs.org</a></p>
+    </div>
+    <div class="step" data-x="5900" data-y="5100"  data-rotate="40" data-scale="2">
+        <p>Wow, it does quite a bit, but can we make it do more?</p>
+    </div>
+    <div class="step" id="packageMgr" data-x="1000" data-y="1000"  data-rotate="90" data-scale="2">
+        <p>First we need to learn about the Node.js package manager</p>
+        <img src="http://i.imgur.com/jB10Q4F.gif" />
+    </div>
+    <div class="step" data-x="1000" data-y="2000"  data-rotate="90" data-scale="2">
+        <p>Node Package Manager (npm) installs the packages you want to use and provides a useful interface to work with them </p>
+    </div>
+    <div class="step" data-x="400" data-y="2000"  data-rotate="90" data-scale="2">
+        <p>It finds a package online, then copies into a node_modules folder in your project folder</p>
+    </div>
+    <div class="step" data-z="-6000"  data-x="400" data-y="6000" data-rotate="90" data-scale="1">
+        <p style="color:white">Then you can require the package in your code:<br /> <i>var express = require('express')</i></p>
+    </div>
+    <div class="step" data-z="-6000"  data-x="1400" data-y="6000" data-rotate="90" data-scale="1">
+        <p style="color:white">And now you can call any of the functions in that package</p>
+    </div>
+    <div class="step" data-z="-6000"  data-x="2400" data-y="6000" data-rotate="90" data-scale="1">
+        <p style="color:white">These npm modules help extend the basic functionality of node.js and speed up programming</p>
+    </div>
+    <div class="step" data-z="-6000"  data-x="3400" data-y="6000" data-rotate="90" data-scale="1">
+        <p style="color:white">Which modules do you need?</p>
+        <ul class="coolUL">
+            <li>express - Handles http routing</li>
+            <li>mongodb - Connects to MongoDb</li>
+            <li>body-parser - Parses request bodies</li>
+            <li>superagent - Outbound http calls</li>
+        </ul>
+    </div>
+    <div class="step" data-z="-6000"  data-x="4400" data-y="6000" data-rotate="90" data-scale="1">
+        <p style="color:white">You install them by typing: <br /><i>npm install express --save</i></p>
+       <p> Which copies the files to your folder and saves the package name and version in your package.json file</p>
+    </div>
+
+    <div class="step" data-z="-6000"  data-x="-4400" data-y="-6000" data-rotate="90" data-scale="1">
+        <p class="bigAndTexty">Server Example</p>
+        <p class="tinyAndTexty">Let's jump right in and try</p>
+    </div>
+
+    <div class="step" data-z="-6000"  data-x="-4400" data-y="-4000" data-rotate="90" data-scale="1">
+        <p>What's the worst that can happen?</p>
+        <div class="fontAndCenter">
+            <img src="http://38.media.tumblr.com/4ea150cf1a622bdbc55f632265b5ca67/tumblr_mwnku16U4m1r3gb3zo1_400.gif" />
+        </div>
+    </div>
+
+    <div class="step" data-z="-6000"  data-x="-4400" data-y="-2000" data-rotate="90" data-scale="1">
+       <p>Create a file called server.js in your node project folder</p>
+    </div>
+    <div class="step" data-z="-6000"  data-x="-4000" data-y="-1500" data-rotate="90" data-scale="1">
+        <p>Make sure you've installed express.js<br /> (npm install express --save) <br />
+            Create a file called server.js in your node project folder</p>
+    </div>
+    <div class="step" data-z="-6000"  data-x="-4400" data-y="-1000" data-rotate="90" data-scale="1">
+        <p style="color:white">Write this code: <p/>
+            <div class="codyBanks">
+                var express = require('express');<br />
+                var app = express();<br />
+                <br />
+                app.get('/', function (req, res) { <br />
+                &nbsp; res.send('Hello World!'); <br />
+                });<br />
+                <br />
+                app.listen(3000, function () {<br />
+                &nbsp; console.log('Example app listening on port 3000!');<br />
+                });
+            </div>
+    </div>
+    <div class="step" data-z="-6000"  data-x="-3400" data-y="-3000" data-rotate="90" data-scale="1">
+        <p class="rockinFont">We just created our first Node app?</p>
+        <div class="fontAndCenter">
+            <img class="jackBlack" src="http://i.imgur.com/0erQFLu.gif" />
+        </div>
+    </div>
+
+    <div class="step" data-z="-6000"  data-x="-3000" data-y="-1000" data-rotate="90" data-scale="1">
+        <p class="bigAndTexty">Resources:</p>
+        <ul class="coolerUL">
+            <li><a href="www.npmjs.org">www.npmjs.org</a></li>
+            <li><a href="http://nodeschool.io/">nodeschool.io</a></li>
+            <li><a href="http://expressjs.com/">express.js.com</a></li>
+            <li><a href="www.google.com">google.com</a></li>
+            <li>Various npm module's websites</li>
+        </ul>
+    </div>
+
+    <div class="step" data-z="-6000"  data-x="-1400" data-y="-1000" data-rotate="90" data-scale="1">
+        <p class="aintNobody">Questions?</p>
+        <div class="aintNobodyImage">
+            <img class="jackBlack" src="http://i.imgur.com/TONDq.gif" />
+        </div>
+    </div>
+
+
+    <!--
+
+        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
+        as `data-rotate` (these two are basically aliases).
+
+    -->
+
+
+    <!--
+
+        So to summarize of all the possible attributes used to position presentation steps, we have:
+
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+
+    -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+
+
+
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+
+    ...
+
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+
+    Just sayin' ;)
+
+-->
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+
+    Last, but not least.
+
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+
+    In here I just include full source of the script to make it more readable.
+
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+
+    The `impress()` function also gives you access to the API that controls the presentation.
+
+    Just store the result of the call:
+
+        var api = impress();
+
+    and you will get three functions you can call:
+
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+
+-->
+
+</body>
+</html>
+
+<!--
+
+    Now you know more or less everything you need to build your first impress.js presentation, but before
+    you start...
+
+    Oh, you've already cloned the code from GitHub?
+
+    You have it open in text editor?
+
+    Stop right there!
+
+    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
+    first needs to grow in your mind.
+
+    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
+
+    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
+    to present. It will get you closer and closer to the layout you'll build later with impress.js.
+
+    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
+    it earlier, because you'll only waste your time fighting with positioning of useless points.
+
+    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about
+    creating awesome and engaging presentations.
+
+    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
+
+-->
+
+<!--
+
+    Are you still reading this?
+
+    For real?
+
+    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
+    to congratulate you personally :)
+
+    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
+    or anything you like to drink. And raise a glass for me ;)
+
+    Cheers!
+
+-->
